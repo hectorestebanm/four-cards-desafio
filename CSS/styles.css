@@ -1,0 +1,165 @@
+:root
+{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header
+{
+    text-align: center;
+    padding: 30px;
+}
+
+.header__h1
+{
+    font-size: 24px;
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.header__h2
+{
+    font-size: 24px;
+    color: var(--Very-Dark-Blue);
+}
+
+@media (min-width: 768px)
+{
+    .header__h1, .header__h2
+    {
+        font-size: 33px;
+    }
+}
+
+.header__p
+{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+
+@media (min-width: 768px)
+{
+    .header__p
+    {
+        font-size: 16px;
+        margin: 0 162px;
+    }
+}
+
+@media (min-width: 912px)
+{
+    .header__p
+    {
+        font-size: 14px;
+        margin: 0 auto;
+        max-width: 570px;
+    }
+}
+
+.cards
+{
+    margin-bottom: 30px;
+}
+
+.card
+{
+    margin: 0 auto;
+    width: 270px;
+    height: 180px;
+    padding: 20px;
+    border: 1px solid var(--Grayish-Blue);
+    border-top: 5px solid var(--Cyan);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+}
+
+@media (min-width: 912px)
+{
+    .cards
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+    .card
+    {
+        margin: 0;
+    }
+    .card--2
+    {
+        margin: 30px 0;
+    }
+}
+
+.card__h3
+{
+    margin: 0;
+}
+
+.card__p
+{
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 20px;
+}
+
+.card__imagen
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card__imagen--img
+{
+    width: 50px;    
+}
+
+.card--1
+{
+    border-top: 5px solid var(--Cyan);
+}
+
+.card--2
+{
+    border-top: 5px solid var(--Red);
+}
+
+.card--3
+{
+    border-top: 5px solid var(--Orange);
+}
+
+.card--4
+{
+    border-top: 5px solid var(--Blue);
+}
+
+.attribution
+{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
