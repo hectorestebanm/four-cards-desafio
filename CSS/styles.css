@@ -1,3 +1,4 @@
+/* Variables utilizadas en el proyecto */
 :root
 {
     --Red: hsl(0, 78%, 62%);
@@ -38,6 +39,7 @@ body
     color: var(--Very-Dark-Blue);
 }
 
+/* Media Query para los títulos a 768px*/
 @media (min-width: 768px)
 {
     .header__h1, .header__h2
@@ -53,6 +55,7 @@ body
     line-height: 25px;
 }
 
+/* Media Query para el párrafo a 768px*/
 @media (min-width: 768px)
 {
     .header__p
@@ -62,6 +65,7 @@ body
     }
 }
 
+/* Media Query para el párrafo a 912px*/
 @media (min-width: 912px)
 {
     .header__p
@@ -72,6 +76,7 @@ body
     }
 }
 
+/* Estilos para las cards */
 .cards
 {
     margin-bottom: 30px;
@@ -90,6 +95,7 @@ body
     box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
 }
 
+/* Media Query para las cards a 912px*/
 @media (min-width: 912px)
 {
     .cards
@@ -109,6 +115,8 @@ body
     }
 }
 
+
+/* Estilos para los elementos de las cards */
 .card__h3
 {
     margin: 0;
@@ -152,6 +160,7 @@ body
     border-top: 5px solid var(--Blue);
 }
 
+/* Estilos para el contenido del footer */
 .attribution
 {
     font-size: 12px;
